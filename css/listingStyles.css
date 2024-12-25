@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #e0dbd4;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width:120px;
+}
+
+.userprofile{
+    width:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #4e3c30;
+    text-decoration: none;
+}
+
+.allsubmenu{ /*need correct*/
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100vw;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.65s ease-in-out;
+    z-index: 1000;
+}
+
+.allsubmenu.open-menu{
+    max-height: 400px;
+}
+
+.submenu{
+    background: #e0dbd4;
+    padding: 20px;
+    margin: 0px;
+}
+
+.userinfo{
+    display: flex;
+    align-items: center;
+}
+
+.userinfo h2{
+    font-weight: 500;
+}
+
+.submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #4e3c30;
+    margin: 2px 0 10px;
+}
+
+.submenulink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4e3c30;
+    margin: 12px 0;
+}
+
+.submenulink p{
+    width: 100%;
+}
+
+.submenulink span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.submenulink:hover span{
+    transform: translate3d(5px);
+}
+
+.submenulink:hover p{
+    font-weight: 600;
+}
+
+.cart{
+    cursor: pointer;
+}
